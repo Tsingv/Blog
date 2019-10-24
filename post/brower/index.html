@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="generator" content="Hugo 0.59.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../css/style.css" type="text/css">
+
+<link rel="alternate" href="../../index.xml" type="application/rss+xml" title="No Wander">
+<title>Brower - No Wander</title>
+</head>
+<body>
+
+<header>
+  <div class="container clearfix">
+    <a class="path" href="../../">[No Wander]</a>
+    <span class="caret"># _</span>
+    <div class="right">
+      
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+
+<main role="main" class="article">
+  
+<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="meta">
+
+    <span class="key">published on</span>
+    <span class="val"><time itemprop="datePublished" datetime="2019-09-09">September 09, 2019</time></span>
+
+
+
+  </div>
+  <h1 class="headline" itemprop="headline">Brower</h1>
+  <section class="body" itemprop="articleBody">
+    <h2 id="标记语言">标记语言</h2>
+
+<p>HTML<br>
+XML 人类不友好</p>
+
+<h2 id="脚本">脚本</h2>
+
+<p>JavaScript</p>
+
+<h2 id="渲染引擎">渲染引擎</h2>
+
+<p>简称“浏览器内核”</p>
+
+<h2 id="web-存储">Web 存储</h2>
+
+<h2 id="跨域资源共享">跨域资源共享</h2>
+
+<p>CORS<br>
+XMLHttpRequest<br>
+Access-Control-Allow-Origin:*</p>
+
+<h2 id="html5">HTML5</h2>
+
+<p><strong>WebSocket</strong><br>
+<strong>Web Worker</strong><br>
+<strong>WebRTC</strong><br>
+<strong>历史</strong></p>
+
+<h2 id="隐患">隐患</h2>
+
+<p><em>Bug、漏洞、脆弱性、缺陷</em><br>
+《黑客攻防技术宝典》</p>
+
+<h2 id="http首部安全特征">HTTP首部安全特征</h2>
+
+<ul>
+<li>内容安全策略</li>
+<li>安全cookie标志</li>
+<li>HttpOnly cookie标志</li>
+<li>X-Content-Type-Options</li>
+<li>Strict-Transport-Security</li>
+</ul>
+
+<h2 id="沙箱">沙箱</h2>
+
+<ul>
+<li>浏览器沙箱</li>
+<li>Iframe沙箱</li>
+</ul>
+
+<h2 id="混入内容机制">混入内容（机制）</h2>
+
+<p>HTTPS+HTTP</p>
+
+<h2 id="攻击面">攻击面</h2>
+
+<ul>
+<li>升级速度</li>
+<li>静默更新</li>
+<li>扩展<br>
+常见的XSS隐患</li>
+<li>插件</li>
+</ul>
+
+<p>Fuzzy测试--&gt;各式各样模糊测试反应</p>
+
+<h2 id="加密通信">加密通信</h2>
+
+<h2 id="同源策略">同源策略</h2>
+
+<p>#SOMETHING<br>
+URI  统一资源定位符<br>
+URL  统一资源标识符<br>
+URN  统一资源名称</p>
+
+<p>escape()<br>
+encodeURI()<br>
+encodeURIComponent()</p>
+
+<p>DOM:Document,Object,Model<br>
+iframe&gt;内联框架当前文档中嵌入另一个文档</p>
+
+<pre><code class="language-html">&lt;script&gt;alert(1)&lt;/script&gt;
+&lt;img src=# onerror=&quot;alert(1)&quot; /&gt;
+&lt;input type=&quot;text&quot; value=&quot;x&quot; onmouseover=&quot;alert(1)&quot; /&gt;
+&lt;iframe sec=&quot;javascript:alert(1)&quot;&gt;&lt;/iframe&gt;
+&lt;a href=&quot;javascript:alert(1)&quot;&gt;x&lt;/a&gt;
+</code></pre>
+
+<h2 id="ajax风险">AJAX风险</h2>
+
+<p>Asynchronous JavaScript And XML</p>
+
+<ul>
+<li>创建快速动态网页的技术</li>
+<li>部分网页更新<br></li>
+</ul>
+
+<pre><code class="language-js">function load()
+{
+    var xmlhttp;
+    xmlhttp=new XMLHttpRequest();
+    xmlhttp.onreadystatechange=function()
+    {
+        if(xmlhttp.readyState==4&amp;&amp;xmlhttp.status==200)
+        {
+            document.getElementById('muDiv').innerHTML=xmlhttp.responseText;
+        }
+    }
+    xmlhttp.open(&quot;GET&quot;,&quot;info.txt&quot;,true);
+    xmlhttp.send();
+}
+</code></pre>
+
+<h2 id="cookie安全">Cookie安全</h2>
+
+<p>CSRF<br>
+Cookie重要机制...</p>
+
+<h2 id="本地存储风险">本地存储风险</h2>
+
+<ul>
+<li>Cookie</li>
+<li>UsreData</li>
+<li>LocalStorage
+
+<ul>
+<li>HTML5的LocalStorage是大势所趋</li>
+<li>LocalStorage无法跨浏览器存在</li>
+<li>LocalStorage存储的数据永久存在</li>
+</ul></li>
+<li>Local Database</li>
+<li>FlashCookie</li>
+<li>JavaScript函数劫持
+
+<ul>
+<li>在目标函数执行前重写函数</li>
+</ul></li>
+</ul>
+
+<pre><code class="language-js">    vap _eval=eval;
+    eval = function(x){
+      if(typeof(x)=='undefined'){return;}
+      alert(x);
+      _eval(x);
+    };
+     eval('alert(1)');
+</code></pre>
+
+<p><span  class="math">\[ADT=(A,D,T)\]</span></p>
+  </section>
+</article>
+
+</main>
+
+</div>
+
+<footer>
+  <div class="container">
+    <span class="copyright">&copy; 2019 No Wander - <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
+

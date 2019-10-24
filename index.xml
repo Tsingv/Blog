@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>No Wander</title>
+    <link>/</link>
+    <description>Recent content on No Wander</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Sep 2019 17:43:42 +0800</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Brower</title>
+      <link>/post/brower/</link>
+      <pubDate>Mon, 09 Sep 2019 17:43:42 +0800</pubDate>
+      
+      <guid>/post/brower/</guid>
+      <description>&lt;h2 id=&#34;标记语言&#34;&gt;标记语言&lt;/h2&gt;
+
+&lt;p&gt;HTML&lt;br&gt;
+XML 人类不友好&lt;/p&gt;
+
+&lt;h2 id=&#34;脚本&#34;&gt;脚本&lt;/h2&gt;
+
+&lt;p&gt;JavaScript&lt;/p&gt;
+
+&lt;h2 id=&#34;渲染引擎&#34;&gt;渲染引擎&lt;/h2&gt;
+
+&lt;p&gt;简称“浏览器内核”&lt;/p&gt;
+
+&lt;h2 id=&#34;web-存储&#34;&gt;Web 存储&lt;/h2&gt;
+
+&lt;h2 id=&#34;跨域资源共享&#34;&gt;跨域资源共享&lt;/h2&gt;
+
+&lt;p&gt;CORS&lt;br&gt;
+XMLHttpRequest&lt;br&gt;
+Access-Control-Allow-Origin:*&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hugo&#43;Caddy</title>
+      <link>/post/hugo&#43;caddy/</link>
+      <pubDate>Sat, 07 Sep 2019 00:07:31 +0800</pubDate>
+      
+      <guid>/post/hugo&#43;caddy/</guid>
+      <description>&lt;p&gt;#环境配置
+&amp;gt; Hugo : &lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;hugo的下载地址(github)&lt;/a&gt;&lt;br /&gt;
+ Caddy : &lt;a href=&#34;https://caddyserver.com/download&#34;&gt;官网下载,需要选择http.git,web.hook插件&lt;/a&gt;&lt;br /&gt;
+&lt;em&gt;推荐下载新版本，原因为apt的较老，当然能运作也无伤大雅&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Thu, 05 Sep 2019 19:21:15 +0800</pubDate>
+      
+      <guid>/about/</guid>
+      <description>I &amp;lsquo;am Brugu.</description>
+    </item>
+    
+  </channel>
+</rss>
