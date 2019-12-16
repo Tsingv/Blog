@@ -1,140 +1,117 @@
+
 <!DOCTYPE html>
-<html class="no-js" lang="en-US">
-    <head>
-        <meta charset="utf-8">
+<html lang="en-us">
+<head>
 
+  
+  <meta charset="UTF-8">
+  <title>
+    Posts | No Wander
+  </title>
+
+
+  
+  <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1">
+
+  
+  <link rel="canonical" href="../post/"/>
+
+  
+  <link rel="stylesheet" href="../css/sanitize.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/highlight_monokai.css">
+  <link rel="stylesheet" href="../css/theme.css">
+  <link rel="stylesheet" href="../css/custom.css">
+  
+  
+  <link href="../index.xml" rel="alternate" type="application/rss+xml" title="No Wander" />
+  <link href="../index.xml" rel="feed" type="application/rss+xml" title="No Wander" />
+
+  
+  
+
+
+</head>
+
+
+
+<body>
+<div class="container">
+
+  
+  <header role="banner">
+    <div class="row gutters">
+      <div id="site-title" class="col span_6">
+        <h1><a href="../">No Wander</a></h1>
         
-
-        <base href="../">
-        <title>No Wander</title>
-        <link rel="canonical" href="../post/">
-        <link href="../post/index.xml" rel="alternate" type="application/rss+xml" title="No Wander"/>
-
-        
-<link rel="stylesheet" href="css/styles.css">
-
-
-<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.3.0/katex.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.3.0/katex.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.3.0/contrib/auto-render.min.js"></script>
-
-    </head>
-    <body>
-        <div class="column">
-
-
-<header class="header">
-    <a href="../" class="title">No Wander</a>
-    
-</header>
-
-
-<section id="main">
-    <div>
-        
-            <article class="post">
-    <header class="post-summary-header">
-      <p class="post-title"><a href="../post/waylandtest/">WaylandTest </a></p>
-      <p class="post-meta">Dec 16 2019 - 1 min </p>
-    </header>
-
-    Wayland First? Test 不知道怎么说，Wayland是个新东西而且理论上确实比X更加的高效，但是不幸的是其还是太新的，很多应用并没有适配wayland协议，导致了上面的应用还是比较少。
-GTK3和QT5说都已经支持wayland了，事实上也是这样的情况，大多最新的应用都可以支持包括firefox,libreoffice,lxterminal这些应用，chromium在上面运行不了原因是有GTK2的东西？rdp这些软件也是没有办法的，但是正因为如此我才发现了VirtualBox虚拟机不需要图形化界面就可以运行，&ndash;type headless,这样可以节省开销因为ssh就可以连过去了。
-期间使用了sway还是挺好用的，解决了weston下没有快捷键的烦恼，但是大多数应用还是使用的Xwayland,把它干掉后用的应用就挺难受的，重要的是输入法没有候选框。
-最后，重新回到了openbox的怀抱，不知道是不是我的错觉，图形化界面竟然是流畅的，可能，Intel显卡驱动还没做wayland吧。
-以上
-    <footer>
-        <a href='../post/waylandtest/'><nobr>more →</nobr></a>
-    </footer>
-</article>
-
-        
-            <article class="post">
-    <header class="post-summary-header">
-      <p class="post-title"><a href="../post/datastruct/">DataStruct </a></p>
-      <p class="post-meta">Oct 24 2019 - 1 min </p>
-    </header>
-
-    DataStruct a[n][m] = a + m*n + m
-    <footer>
-        <a href='../post/datastruct/'><nobr>more →</nobr></a>
-    </footer>
-</article>
-
-        
-            <article class="post">
-    <header class="post-summary-header">
-      <p class="post-title"><a href="../post/brower/">Brower </a></p>
-      <p class="post-meta">Sep 9 2019 - 1 min </p>
-    </header>
-
-    <h2 id="标记语言">标记语言</h2>
-
-<p>HTML<br>
-XML 人类不友好</p>
-
-<h2 id="脚本">脚本</h2>
-
-<p>JavaScript</p>
-
-<h2 id="渲染引擎">渲染引擎</h2>
-
-<p>简称“浏览器内核”</p>
-
-<h2 id="web-存储">Web 存储</h2>
-
-<h2 id="跨域资源共享">跨域资源共享</h2>
-
-<p>CORS<br>
-XMLHttpRequest<br>
-Access-Control-Allow-Origin:*</p>
-    <footer>
-        <a href='../post/brower/'><nobr>more →</nobr></a>
-    </footer>
-</article>
-
-        
-            <article class="post">
-    <header class="post-summary-header">
-      <p class="post-title"><a href="../post/hugo&#43;caddy/">Hugo&#43;Caddy </a></p>
-      <p class="post-meta">Sep 7 2019 - 1 min </p>
-    </header>
-
-    <p>#环境配置</p>
-<blockquote>
-<p>Hugo : <a href="https://github.com/gohugoio/hugo/releases">hugo的下载地址(github)</a><br>
-Caddy : <a href="https://caddyserver.com/download">官网下载,需要选择http.git,web.hook插件</a><br>
-<em>推荐下载新版本，原因为apt的较老，当然能运作也无伤大雅</em></p>
-</blockquote>
-    <footer>
-        <a href='../post/hugo&#43;caddy/'><nobr>more →</nobr></a>
-    </footer>
-</article>
-
-        
+      </div>
+      <div id="social" class="col span_6">
+        <ul>
+          
+          
+          
+          
+        </ul>
+      </div>
     </div>
-</section>
+  </header>
 
-<footer class="bottom-footer">
-  <div class="copyright">
-    <p>
-    
-    <a href="http://creativecommons.org/licenses/by/4.0/" title="Creative Commons Attribution">Some rights reserved</a>; 
-    please attribute properly and link back.
-    
-    
-    </p>
-  </div>
-</footer>
 
-<script>
-    renderMathInElement(document.getElementById('main'));
-</script>
+  
+  <main id="list" role="main">
+    <div class="article-header light-gray"><h1>#Posts</h1></div>
+    
+    <div class="summary">
+      <h2><a href="../post/waylandtest/">WaylandTest </a></h2>
+      <div class="meta">
+        Dec 16, 2019 &nbsp;
+        
+      </div>
+    </div>
+    
+    <div class="summary">
+      <h2><a href="../post/datastruct/">DataStruct </a></h2>
+      <div class="meta">
+        Oct 24, 2019 &nbsp;
+        
+      </div>
+    </div>
+    
+    <div class="summary">
+      <h2><a href="../post/brower/">Brower </a></h2>
+      <div class="meta">
+        Sep 9, 2019 &nbsp;
+        
+      </div>
+    </div>
+    
+    <div class="summary">
+      <h2><a href="../post/hugo&#43;caddy/">Hugo&#43;Caddy </a></h2>
+      <div class="meta">
+        Sep 7, 2019 &nbsp;
+        
+      </div>
+    </div>
+    
+  </main>
+
+
+  
+  <footer role="contentinfo">
+    <div style="text-align:center;">
+      
+      
+    </div>
+  </footer>
+
 
 </div>
+
+<script src="../js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
 </body>
 </html>
 
