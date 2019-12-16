@@ -1,44 +1,43 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<head>
-<meta charset="utf-8">
-<meta name="description" content="">
-<meta name="generator" content="Hugo 0.59.0" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../../css/style.css" type="text/css">
+<html class="no-js" lang="en-US">
+    <head>
+        <meta charset="utf-8">
 
-<link rel="alternate" href="../../index.xml" type="application/rss+xml" title="No Wander">
-<title>Brower - No Wander</title>
-</head>
-<body>
+        
 
-<header>
-  <div class="container clearfix">
-    <a class="path" href="../../">[No Wander]</a>
-    <span class="caret"># _</span>
-    <div class="right">
-      
-    </div>
-  </div>
+        <base href="../../">
+        <title>No Wander</title>
+        <link rel="canonical" href="../../post/brower/">
+        <link href="" rel="alternate" type="application/rss+xml" title="No Wander"/>
+
+        
+<link rel="stylesheet" href="css/styles.css">
+
+
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.3.0/katex.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.3.0/katex.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.3.0/contrib/auto-render.min.js"></script>
+
+    </head>
+    <body>
+        <div class="column">
+
+<header class="header">
+    <a href="../../" class="title">No Wander</a>
+    
 </header>
 
-<div class="container">
 
-
-<main role="main" class="article">
-  
-<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="meta">
-
-    <span class="key">published on</span>
-    <span class="val"><time itemprop="datePublished" datetime="2019-09-09">September 09, 2019</time></span>
-
-
-
-  </div>
-  <h1 class="headline" itemprop="headline">Brower</h1>
-  <section class="body" itemprop="articleBody">
-    <h2 id="标记语言">标记语言</h2>
+<section id="main">
+    <header class="post-header">
+      <p class="post-title"><a href="../../post/brower/">Brower </a></p>
+      <p class="post-meta">Sep 9 2019 - 1 min </p>
+    </header>
+    <article itemprop="articleBody" id="content">
+       <h2 id="标记语言">标记语言</h2>
 
 <p>HTML<br>
 XML 人类不友好</p>
@@ -119,14 +118,11 @@ encodeURIComponent()</p>
 
 <p>DOM:Document,Object,Model<br>
 iframe&gt;内联框架当前文档中嵌入另一个文档</p>
-
-<pre><code class="language-html">&lt;script&gt;alert(1)&lt;/script&gt;
-&lt;img src=# onerror=&quot;alert(1)&quot; /&gt;
-&lt;input type=&quot;text&quot; value=&quot;x&quot; onmouseover=&quot;alert(1)&quot; /&gt;
-&lt;iframe sec=&quot;javascript:alert(1)&quot;&gt;&lt;/iframe&gt;
-&lt;a href=&quot;javascript:alert(1)&quot;&gt;x&lt;/a&gt;
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span>&gt;<span style="color:#a6e22e">alert</span>(<span style="color:#ae81ff">1</span>)&lt;/<span style="color:#f92672">script</span>&gt;
+&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">#</span> <span style="color:#a6e22e">onerror</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;alert(1)&#34;</span> /&gt;
+&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;x&#34;</span> <span style="color:#a6e22e">onmouseover</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;alert(1)&#34;</span> /&gt;
+&lt;<span style="color:#f92672">iframe</span> <span style="color:#a6e22e">sec</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;javascript:alert(1)&#34;</span>&gt;&lt;/<span style="color:#f92672">iframe</span>&gt;
+&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;javascript:alert(1)&#34;</span>&gt;x&lt;/<span style="color:#f92672">a</span>&gt;</code></pre></div>
 <h2 id="ajax风险">AJAX风险</h2>
 
 <p>Asynchronous JavaScript And XML</p>
@@ -135,23 +131,21 @@ iframe&gt;内联框架当前文档中嵌入另一个文档</p>
 <li>创建快速动态网页的技术</li>
 <li>部分网页更新<br></li>
 </ul>
-
-<pre><code class="language-js">function load()
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">load</span>()
 {
-    var xmlhttp;
-    xmlhttp=new XMLHttpRequest();
-    xmlhttp.onreadystatechange=function()
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">xmlhttp</span>;
+    <span style="color:#a6e22e">xmlhttp</span><span style="color:#f92672">=</span><span style="color:#66d9ef">new</span> <span style="color:#a6e22e">XMLHttpRequest</span>();
+    <span style="color:#a6e22e">xmlhttp</span>.<span style="color:#a6e22e">onreadystatechange</span><span style="color:#f92672">=</span><span style="color:#66d9ef">function</span>()
     {
-        if(xmlhttp.readyState==4&amp;&amp;xmlhttp.status==200)
+        <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">xmlhttp</span>.<span style="color:#a6e22e">readyState</span><span style="color:#f92672">==</span><span style="color:#ae81ff">4</span><span style="color:#f92672">&amp;&amp;</span><span style="color:#a6e22e">xmlhttp</span>.<span style="color:#a6e22e">status</span><span style="color:#f92672">==</span><span style="color:#ae81ff">200</span>)
         {
-            document.getElementById('muDiv').innerHTML=xmlhttp.responseText;
+            document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;muDiv&#39;</span>).<span style="color:#a6e22e">innerHTML</span><span style="color:#f92672">=</span><span style="color:#a6e22e">xmlhttp</span>.<span style="color:#a6e22e">responseText</span>;
         }
     }
-    xmlhttp.open(&quot;GET&quot;,&quot;info.txt&quot;,true);
-    xmlhttp.send();
+    <span style="color:#a6e22e">xmlhttp</span>.<span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;GET&#34;</span>,<span style="color:#e6db74">&#34;info.txt&#34;</span>,<span style="color:#66d9ef">true</span>);
+    <span style="color:#a6e22e">xmlhttp</span>.<span style="color:#a6e22e">send</span>();
 }
-</code></pre>
-
+</code></pre></div>
 <h2 id="cookie安全">Cookie安全</h2>
 
 <p>CSRF<br>
@@ -177,30 +171,35 @@ Cookie重要机制...</p>
 <li>在目标函数执行前重写函数</li>
 </ul></li>
 </ul>
-
-<pre><code class="language-js">    vap _eval=eval;
-    eval = function(x){
-      if(typeof(x)=='undefined'){return;}
-      alert(x);
-      _eval(x);
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#a6e22e">vap</span> <span style="color:#a6e22e">_eval</span><span style="color:#f92672">=</span>eval;
+    eval <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">x</span>){
+      <span style="color:#66d9ef">if</span>(<span style="color:#66d9ef">typeof</span>(<span style="color:#a6e22e">x</span>)<span style="color:#f92672">==</span><span style="color:#e6db74">&#39;undefined&#39;</span>){<span style="color:#66d9ef">return</span>;}
+      <span style="color:#a6e22e">alert</span>(<span style="color:#a6e22e">x</span>);
+      <span style="color:#a6e22e">_eval</span>(<span style="color:#a6e22e">x</span>);
     };
-     eval('alert(1)');
-</code></pre>
-
+     eval(<span style="color:#e6db74">&#39;alert(1)&#39;</span>);
+</code></pre></div>
 <p><span  class="math">\[ADT=(A,D,T)\]</span></p>
-  </section>
-</article>
+    </article>
+</section>
 
-</main>
-
-</div>
-
-<footer>
-  <div class="container">
-    <span class="copyright">&copy; 2019 No Wander - <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></span>
+<footer class="bottom-footer">
+  <div class="copyright">
+    <p>
+    
+    <a href="http://creativecommons.org/licenses/by/4.0/" title="Creative Commons Attribution">Some rights reserved</a>; 
+    please attribute properly and link back.
+    
+    
+    </p>
   </div>
 </footer>
 
+<script>
+    renderMathInElement(document.getElementById('main'));
+</script>
+
+</div>
 </body>
 </html>
 

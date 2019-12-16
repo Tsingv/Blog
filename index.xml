@@ -6,10 +6,23 @@
     <description>Recent content on No Wander</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Oct 2019 16:49:09 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 16 Dec 2019 19:20:12 +0800</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>WaylandTest</title>
+      <link>/post/waylandtest/</link>
+      <pubDate>Mon, 16 Dec 2019 19:20:12 +0800</pubDate>
+      
+      <guid>/post/waylandtest/</guid>
+      <description>Wayland First? Test 不知道怎么说，Wayland是个新东西而且理论上确实比X更加的高效，但是不幸的是其还是太新的，很多应用并没有适配wayland协议，导致了上面的应用还是比较少。
+GTK3和QT5说都已经支持wayland了，事实上也是这样的情况，大多最新的应用都可以支持包括firefox,libreoffice,lxterminal这些应用，chromium在上面运行不了原因是有GTK2的东西？rdp这些软件也是没有办法的，但是正因为如此我才发现了VirtualBox虚拟机不需要图形化界面就可以运行，&amp;ndash;type headless,这样可以节省开销因为ssh就可以连过去了。
+期间使用了sway还是挺好用的，解决了weston下没有快捷键的烦恼，但是大多数应用还是使用的Xwayland,把它干掉后用的应用就挺难受的，重要的是输入法没有候选框。
+最后，重新回到了openbox的怀抱，不知道是不是我的错觉，图形化界面竟然是流畅的，可能，Intel显卡驱动还没做wayland吧。
+以上</description>
+    </item>
     
     <item>
       <title>DataStruct</title>
@@ -54,10 +67,12 @@ Access-Control-Allow-Origin:*&lt;/p&gt;</description>
       <pubDate>Sat, 07 Sep 2019 00:07:31 +0800</pubDate>
       
       <guid>/post/hugo&#43;caddy/</guid>
-      <description>&lt;p&gt;#环境配置
-&amp;gt; Hugo : &lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;hugo的下载地址(github)&lt;/a&gt;&lt;br /&gt;
- Caddy : &lt;a href=&#34;https://caddyserver.com/download&#34;&gt;官网下载,需要选择http.git,web.hook插件&lt;/a&gt;&lt;br /&gt;
-&lt;em&gt;推荐下载新版本，原因为apt的较老，当然能运作也无伤大雅&lt;/em&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;#环境配置&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hugo : &lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;hugo的下载地址(github)&lt;/a&gt;&lt;br&gt;
+Caddy : &lt;a href=&#34;https://caddyserver.com/download&#34;&gt;官网下载,需要选择http.git,web.hook插件&lt;/a&gt;&lt;br&gt;
+&lt;em&gt;推荐下载新版本，原因为apt的较老，当然能运作也无伤大雅&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
     
     <item>
