@@ -6,10 +6,19 @@
     <description>Recent content in Posts on No Wander</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Dec 2019 19:20:12 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jan 2020 23:40:10 +0800</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Things</title>
+      <link>/post/things/</link>
+      <pubDate>Thu, 16 Jan 2020 23:40:10 +0800</pubDate>
+      
+      <guid>/post/things/</guid>
+      <description> 界面不是要花哨和酷炫，而是要实用，要让生产力达到最大化 过程化考核是来真的不是其他的 英语是硬伤 惊喜总是陪伴着的  </description>
+    </item>
     
     <item>
       <title>WaylandTest</title>
