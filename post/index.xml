@@ -6,10 +6,25 @@
     <description>Recent content in Posts on No Wander</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jan 2020 23:40:10 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jan 2020 20:11:23 +0800</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Dm-Crypt</title>
+      <link>/post/dm-crypt/</link>
+      <pubDate>Tue, 28 Jan 2020 20:11:23 +0800</pubDate>
+      
+      <guid>/post/dm-crypt/</guid>
+      <description>起因 在编程随想上看到了linux下的全盘加密，我觉得我是有这样的需求的，因此参阅一些资料完成了全盘的加密。
+操作 首先对磁盘进行备份，这里使用的dd直接进行全盘加密没有压缩
+# dd if=/dev/sda1 of=/mnt/backup.raw status=progress //status是新版本支持的，可以显示dd的进度 //备份到其他地方哈 随后对现有的分区进行加密和格式化
+# cryptsetup --cipher aes-xts-plain64 --key-size 512 --hash sha512 --iter-time 10000 luksFormat /dev/sda1 //初始化磁盘加密，这会销毁所有的现有数据 //这里默认是新的LUKS2加密头，GRUB尚未完成对其的加密引导支持，具体可参阅Arch的GRUB wiki，这样的化我们需要单独的/boot分区，未加密的。 # cryptsetup luksOpen /dev/sda1 xxx //打开加密的磁盘，映射到了/dev/mapper/xxx，这个映射的相当于普通的块设备可以直接对其进行mount及其他操作 # mkfs.ext4 /dev/mapper/xxx //你可以将这个挂在到某个地方安装系统或者我们直接dd回来 # dd if=/mnt/backup.raw of=/dev/mapper/xxx //因为superblock的问题，我们可以用下面的来进行对齐修复 # resize2fs /dev/mapper/xxx //运气好不用这样只需要fsck -b指定备用的superblock位置就好 到这里系统就已经就绪了，BTW，以上这些都是在外面的live操作系统操作的
+将单独的boot分区挂载到系统的/boot下，随后进行grub安装
+# genfstab -U /xxx //生成fstab文件更新 # arch-chroot /xxx //这里把/dev/mapper/xxx 挂载到了/xxx下 # grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB //id可以改ok的 //我这里安装了之后并没有把内核弄进去我不知道是不是EFI分区非空的原因 //之前内核加载进去我是把之前的内核复制过去的:-P 修改/etc/mkinitcpio.conf
+MODULES=(vfat ext4) HOOKS=(base udev autodetect keyboard keymap modconf block encrypt filesystems fsck) 修改/etc/default/grub</description>
+    </item>
     
     <item>
       <title>Things</title>
